@@ -1,0 +1,39 @@
+body {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.centered-title {
+    font-size: 2em;
+    margin-top: 20px;
+    text-align: center;
+    color: #ffffff; 
+    font-family: 'Courier', monospace; 
+}
+
+#score {
+    font-size: 1.5em;
+    color: #ffe600f5; 
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+canvas {
+    background: transparent;
+}
+
+.link-button {
+    font-family: 'impact', sans-serif;
+    color: #fdfeff;
+    text-decoration: none; 
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}

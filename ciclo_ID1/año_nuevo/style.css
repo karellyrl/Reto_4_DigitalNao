@@ -1,0 +1,36 @@
+body{
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 15%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h1 {
+    font-size: 60px; 
+    font-weight: bold; 
+    color: #ffefa5;
+}
+
+.container{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.big-number{
+    font-size: 70px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.link-button {
+    font-family: 'impact', sans-serif;
+    color: #fdfeff;
+    text-decoration: none; 
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}

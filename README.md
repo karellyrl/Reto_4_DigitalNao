@@ -54,7 +54,7 @@ Para visualizar el mini proyecto 5 se deben de realizar los siguientes comandos 
 * entrar a la url local http://127.0.0.1:8000/
 
 ## Ciclo ID 3
-En este ciclo se llevó a cabo 5 un mini proyecto con Python y JavaScript para desarrollar una aplicación 
+En este ciclo se llevó a cabo un mini proyecto con Python y JavaScript para desarrollar una aplicación 
 para pintar en la pantalla con el cursor.
 
 

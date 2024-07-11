@@ -43,7 +43,7 @@ Para visualizar el mini proyecto 3 se deben de realizar los siguientes comandos 
 * python3 manage.py runserver
 * entrar a la url local http://127.0.0.1:8000/
 
-* Para visualizar el mini proyecto 4 se deben de realizar los siguientes comandos en la terminal:
+Para visualizar el mini proyecto 4 se deben de realizar los siguientes comandos en la terminal:
 * cd Reto_4_DigitalNao/ciclo_ID2/rating_movies
 * python3 manage.py runserver
 * entrar a la url local http://127.0.0.1:8000/

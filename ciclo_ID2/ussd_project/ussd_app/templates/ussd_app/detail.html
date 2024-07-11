@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalles sobre el código USSD</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'ussd_app/styles.css' %}">
+    <style>
+        h1 {
+            font-family: "Times New Roman", Times, serif; 
+            color: #f00c897c; 
+            margin-bottom: 10px;
+            margin-top: 100px; 
+        }
+        
+        p {
+            font-family: "Times New Roman", Times, serif;
+        }
+    </style>
+
+</head>
+<body>
+    <a href="../../../../index.html"  class="link-button back-button">Volver a la Página Principal</a>
+    <h1>Detalles sobre <br> el código USSD</h1>
+    <p>El código USSD seleccionado es:<br> {{ codigo }}</p>
+    <p>Función que realiza:<br> {{ significado|safe }}</p>
+    <a href="{% url 'home' %}">Volver al inicio</a>
+</body>
+</html>
+
+
+

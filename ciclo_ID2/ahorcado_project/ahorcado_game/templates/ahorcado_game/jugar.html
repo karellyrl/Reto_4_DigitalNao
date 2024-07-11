@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Ahorcado</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'ahorcado_game/styles.css' %}">
+</head>
+<body>
+    <a href="../../../../index.html" class="link-button back-button">Volver a la Página Principal</a>
+    <h1>Juego de Ahorcado</h1>
+    <img src="{% static imagen_ahorcado %}" alt="Ahorcado">
+    <p>Palabra: {{ juego.mostrar_palabra }}</p>
+    <p>{{ juego.mensaje }}</p>
+
+    {% if not fin_juego %}
+        <form method="POST">
+            {% csrf_token %}
+            <div class="input-wrapper">
+                <label for="letra">Ingresa una letra, por favor:</label>
+                <input type="text" id="letra" name="letra" maxlength="1" required>
+                <button type="submit">Adivinar</button>
+            </div>
+        </form>
+    {% else %}
+        <form method="GET">
+            <button type="submit" name="reiniciar" value="1">Reiniciar Juego</button>
+        </form>
+    {% endif %}
+</body>
+</html>
+

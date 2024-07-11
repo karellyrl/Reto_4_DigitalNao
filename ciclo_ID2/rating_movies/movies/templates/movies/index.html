@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratings de películas</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'movies/styles.css' %}">
+</head>
+<body>
+    <a href="../../../../index.html" class="link-button back-button">Volver a la Página Principal</a>
+    <h1>Ratings de películas</h1>
+    <div class="movie-container">
+        {% for movie in movies %}
+            <div class="movie">
+                <h2>{{ movie.title }}</h2>
+                <img src="{{ movie.poster_url }}" alt="{{ movie.title }} poster">
+                <p>Rating: {{ movie.vote_average }}</p>
+                <p>{{ movie.overview }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

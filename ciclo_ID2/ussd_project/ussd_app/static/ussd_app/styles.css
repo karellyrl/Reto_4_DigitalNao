@@ -1,0 +1,73 @@
+body {
+    background-image: url("back.JPG");
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center; 
+    min-height: 100vh;
+    padding-top: 80px;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: "Times New Roman", Times, serif;
+    color: #f00c89e8;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+p {
+    font-family: "Times New Roman", Times, serif;
+    color: #a5a4a5;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: auto;  
+    margin-right: auto; 
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 20%; 
+    margin: 20px auto; 
+    overflow: auto;
+}
+button {
+    background-color: #f00c897c;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 80px;  
+    height: 40px;  
+    font-size: 11px;
+    display: flex;  
+    justify-content: center;  
+    align-items: center; 
+}
+
+
+button:hover {
+    background-color: #f00c89af;
+}
+
+.detail-container {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: auto;
+}

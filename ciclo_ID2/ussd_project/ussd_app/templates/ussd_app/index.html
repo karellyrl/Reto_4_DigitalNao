@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú USSD</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'ussd_app/styles.css' %}">
+</head>
+<body>
+    <a href="../../../../index.html" class="link-button back-button">Volver a la Página Principal</a>
+    <h1>Menú USSD</h1>
+    <p class="subtitle">Selecciona un código para acceder<br>a la función que necesitas.</p>
+    <div class="button-container">
+        {% for codigo, significado in codigos.items %}
+            <form action="{% url 'codigo_detail' codigo=codigo %}" method="get">
+                <button type="submit">{{ codigo }}</button>
+            </form>
+        {% endfor %}
+    </div>
+</body>
+</html>

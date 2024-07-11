@@ -1,0 +1,43 @@
+body {
+    background-image: url("background.jpg");
+    background-size: cover;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 15%;
+}
+
+h1 {
+    font-family: 'impact', sans-serif;
+    font-size: 40px; 
+    font-weight: bold; 
+    color: #3333338f;
+}
+
+label[for="numero"] {
+    font-family: ' Consolas', monospace; 
+}
+
+.resultado-text {
+    font-family: ' Consolas', monospace;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+button {
+    font-family: 'impact', sans-serif;
+    background-color: #ffffff;
+    color: rgb(235, 212, 163);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(240, 116, 178, 0.418);
+}
+
+h2 {
+    color: #ff1f1fde;
+}

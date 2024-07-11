@@ -63,6 +63,6 @@ Al igual que en el ciclo anterior, se activa el entorno virtual e instalar los r
 * cd Reto_4_DigitalNao/ciclo_ID3
 * source venv/bin/activate (para Linux) venv\Scripts\activate (para Windows)
 * pip install -r requirements.txt
-* cd Reto_4_DigitalNao/ciclo_ID3/paint_app
+* cd paint_app
 * python3 manage.py runserver
 * entrar a la url local http://127.0.0.1:8000/
